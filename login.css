@@ -1,79 +1,123 @@
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #342741 0%, #78726f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center box */
 .outer {
-    height: 100vh;
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.inner {
-    width: 350px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-    padding: 25px;
-    text-align: left;
+/* Glassmorphism effect */
+.login-container {
+  width: 350px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: white;
+  animation: slideIn 0.8s ease-in-out;
 }
 
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Headings */
 h1 {
-    margin-bottom: 8px;
-    font-size: 26px;
+  margin-bottom: 8px;
+  font-size: 26px;
 }
 
 p {
-    margin-bottom: 20px;
-    color: gray;
+  margin-bottom: 20px;
+  color: #eee;
 }
 
+/* Labels */
 label {
-    display: block;
-    margin: 8px 0 5px;
-    font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
 }
 
+/* Inputs */
 input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  transition: 0.3s;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
+input::placeholder {
+  color: #ddd;
 }
 
-button:hover {
-    background-color: darkblue;
+input:focus {
+  border: 2px solid #00f2fe;
+  box-shadow: 0 0 10px #00f2fe;
 }
 
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 81, 47, 0.6);
+}
+
+/* Signup text */
 .signup {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 .signup a {
-    color: blue;
-    text-decoration: none;
+  color: #00f2fe;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .signup a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
