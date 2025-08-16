@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.outer {
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    padding: 25px;
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-size: 26px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: gray;
+}
+
+label {
+    display: block;
+    margin: 8px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: blue;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
