@@ -18,7 +18,7 @@ It demonstrates how to build a clean, responsive, and modern login form with inp
 
 Here is how the login page looks:  
 
-![Login Page](Login page.png)  
+![alt text](<Login page.png>)  
 
 ---
 
